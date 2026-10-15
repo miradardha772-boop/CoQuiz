@@ -23,57 +23,16 @@ def play_quiz():
             "answer": "c"
         },
         {
-        "prompt": "Who is the 7th Hokage from the anime Naruto?\n(a)Naruto Uzumaki\n(b)Sasuke Uchiha\n(c)Minato Uzumaki\nYour answer: ",
-        "answer": "a"
+            "prompt": "Who is the 7th Hokage from the anime Naruto?\n(a) Naruto Uzumaki\n(b) Sasuke Uchiha\n(c) Minato Uzumaki\nYour answer: ",
+            "answer": "a"
         },
         {
-        "prompt":"What is the capital of Lithuania?\n(a)Montenegro\n(b)Paris\n(c)idk either\nYour answer:" ,
-        "answer":"c"
+            "prompt": "What is the capital of Lithuania?\n(a) Montenegro\n(b) Paris\n(c) idk either\nYour answer: ",
+            "answer": "c"
         },
         {
-        "prompt":"Am I an expert to coding?\n(a)YES\n(b)meh not so muchdef ask_text(prompt):
-    while True:
-        text = input(prompt).strip()
-        if text == "":
-            print("This can't be empty.")
-        else:
-            return text
-
-
-def ask_amount():
-    while True:
-        try:
-            number = float(input("How much? "))
-            if number <= 0:
-                print("Amount must be more than 0.")
-            else:
-                return number
-        except ValueError:
-            print("Please enter a number.")
-
-
-def add_expense(expenses):
-    name = ask_text("What did you buy? ")
-    amount = ask_amount()
-    category = ask_text("Category (food, transport...): ")
-    expense = {"name": name, "amount": amount, "category": category}
-    expenses.append(expense)
-    print(f"Added: {name} - {amount:.2f} ({category})")
-
-def show_expenses(expenses):
-    if len(expenses) == 0:
-        print("No expenses yet.")
-        return
-    total = 0
-    for expense in expenses:
-        print(f"{expense['name']} - {expense['amount']:.2f} ({expense['category']})")
-        total = total + expense["amount"]
-    print(f"Total: {total:.2f}")
-expenses = []
-add_expense(expenses)
-add_expense(expenses)
-show_expenses(expenses)coquiz.py\n(c)No,wrong answer\nYour answer:",
-        "answer": "a"
+            "prompt": "Am I an expert at coding?\n(a) YES\n(b) Meh, not so much\n(c) No, wrong answer\nYour answer: ",
+            "answer": "a"
         }
     ]
 
